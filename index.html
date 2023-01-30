@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflect</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&  display=swap" rel="stylesheet">
+<script src="app.js" defer></script>
+</head>
+<body>
+    <nav id="side-nav-wrapper" class='wrapper-style'>
+        <h2>Categories</h2>
+        <div class="category-container"></div>
+        <img src="./images/plusblue.png" alt="Create new categories" height="40"id='add-category-btn'>
+        <dialog id='new-category-modal'>
+            <button id="close-new-category-btn">X</button>
+            <div class="category-inputs">
+                <label for="category-name">Category Name</label>
+                <input type="text" id='new-category-name' maxlength="18">
+                <button id="new-category-modal-submit-btn">Add</button>
+            </div>
+        </dialog>
+    </nav>
+    <nav id="top-nav-wrapper" class='wrapper-style'></nav>
+    <div id="card-wrapper" class='wrapper-style'></div>
+    <footer id="foot" class='wrapper-style'></footer>
+</body>
+</html>

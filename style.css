@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #D6EDFF;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 20% 70% 10%;
+    justify-items: center;
+    align-items: center;
+}
+
+/* wrapper layouts */
+
+.wrapper-style {
+    border-radius: 5px;
+}
+
+#side-nav-wrapper{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    height: 95%;
+    width: 80%;
+    background-color: #86C1B2;
+}
+
+#top-nav-wrapper {
+    grid-column-start: 2 /span 3;
+    grid-row-start: 1;
+    width: 95%;
+    height: 70%;
+    background-color: #ACD7EC;
+}
+#card-wrapper {
+    grid-column-start: 2 /span 3;
+    grid-row-start: 2 / span 2;
+    background-color: red;
+    height: 95%;
+    width: 95%;
+}
+
+#foot {
+    grid-column-start: 2 /span 3;
+    grid-row-start: 3;
+    width: 95%;
+    height: 50%;
+    background-color: #ACD7EC;
+}
+
+/* side nav */
+
+#side-nav-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 80% 10%;
+    justify-items: center;
+    align-items: center;
+    color: white;
+}
+
+#side-nav-wrapper h2 {
+    text-decoration: underline;
+}
+
+.category-container {
+    /* border: 2px solid white; */
+    max-width: 80%;
+    height: 100%;
+}
+
+#new-category-modal {
+    height: 50vh;
+    width: 30vw;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+    background-color: #86c1b2;
+}
+
+#new-category-modal::backdrop {
+    background-color: #D6EDFF;
+    opacity: .8;
+}
+
+#close-new-category-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+    color: white;
+    font-size: 1.2rem;
+    background-color: #86C1B2;
+    border: none;
+}
+
+.category-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20%;
+    font-size: 1.8rem;
+    color: white;
+}
+
+#new-category-name[type=text] {
+    margin-top: 28px;
+    font-size: 1.3rem;
+    padding: 1px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+}
+
+#new-category-modal-submit-btn {
+    margin-top: 40px;
+    height: 25px;
+    width: 50px;
+    border-radius: 5px;
+    border: none;
+}
+
+
+.category-container-style {
+    text-align: left;
+    font-size: 1.3rem;
+    margin: 5px 0;
+
+}

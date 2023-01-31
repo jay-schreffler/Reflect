@@ -8,6 +8,20 @@ const createNewCategoryBtn = document.querySelector('#new-category-modal-submit-
 // side nav modal
 const newCategoryModalCloseBtn = document.querySelector('#close-new-category-btn');
 const newCategoryInput = document.querySelector('#new-category-name');
+// add card btn
+const addNewCardBtn = document.querySelector('#add-reflection-btn');
+const newCardModal = document.querySelector('#new-card-modal');
+
+
+
+// event listeners
+addNewCardBtn.addEventListener('click', () => {
+    newCardModal.showModal();
+})
+
+newCardModal.addEventListener('click', () => {
+    newCardModal.close();
+})
 
 addCategoryBtn.addEventListener('click', () => {
     categoryModal.showModal();
@@ -37,6 +51,9 @@ createNewCategoryBtn.addEventListener('click', () => {
     categoryModal.close();
 })
 
+//cards
 
 
+
+//load array
 test()
